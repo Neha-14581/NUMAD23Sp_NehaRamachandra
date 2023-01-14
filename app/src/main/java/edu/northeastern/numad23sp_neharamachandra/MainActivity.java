@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //When the AboutMe button is clicked, the following thing should take place.
+        //Proper button and the functionalities have been added to it.
 
         Button btn1 = findViewById(R.id.buttonAboutMe);
         btn1.setOnClickListener(new View.OnClickListener() {
