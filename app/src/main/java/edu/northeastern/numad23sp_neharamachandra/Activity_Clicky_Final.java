@@ -17,8 +17,9 @@ public class Activity_Clicky_Final extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clicky_final);
         textToDisplay = findViewById(R.id.pressedText);
-        textToDisplay.setText("Pressed: -");
+        textToDisplay.setText("Pressed: - ");
     }
+    //Click button was added
 
     public void onClick(View view) {
         StringBuilder stringBuilder = new StringBuilder();
