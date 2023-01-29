@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        config1 {
+            keyAlias 'KeyStoreAssignment1'
+            keyPassword 'Admissions@2021'
+            storePassword 'Admissions@2021'
+            storeFile file('C:\\Users\\18573\\Documents\\KeyStore\\KeyStoreAssignment1.jks')
+        }
+    }
     namespace 'edu.northeastern.numad23sp_neharamachandra'
     compileSdk 33
 
@@ -20,6 +28,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config1
         }
     }
     compileOptions {
