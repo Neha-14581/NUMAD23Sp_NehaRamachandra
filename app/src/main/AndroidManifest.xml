@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD23Sp_NehaRamachandra"
         tools:targetApi="31">
+
+        <activity
+            android:name=".RecyclerLinkAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".LinkModel"
+            android:exported="false" />
+        <activity
+            android:name=".LinkCollector"
+            android:exported="false" />
         <activity
             android:name=".AboutMeActivity"
             android:exported="false" />

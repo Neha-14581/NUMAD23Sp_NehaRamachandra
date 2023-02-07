@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    lintOptions{
+        checkReleaseBuilds false
+    }
     signingConfigs {
         config1 {
             keyAlias 'KeyStoreAssignment1'
