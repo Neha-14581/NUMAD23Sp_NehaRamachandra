@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent1 = new Intent(this, AboutMeActivity.class);
         startActivity(intent1);
     }
+    //Link collector is added so that it appears on the main screen.
 
     public void linkCollectorButton(View view) {
         Intent intent2 = new Intent(this, LinkCollector.class);
