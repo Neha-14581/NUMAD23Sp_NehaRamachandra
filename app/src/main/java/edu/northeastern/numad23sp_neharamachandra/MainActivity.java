@@ -45,4 +45,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent2 = new Intent(this, LinkCollector.class);
         startActivity(intent2);
     }
+
+    public void primeDirective(View view) {
+        Intent intent2 = new Intent(this, PrimeDirective.class);
+        startActivity(intent2);
+    }
 }

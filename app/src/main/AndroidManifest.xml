@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD23Sp_NehaRamachandra"
         tools:targetApi="31">
-
+        <activity
+            android:name=".PrimeDirective"
+            android:exported="false" />
         <activity
             android:name=".RecyclerLinkAdapter"
             android:exported="false" />
