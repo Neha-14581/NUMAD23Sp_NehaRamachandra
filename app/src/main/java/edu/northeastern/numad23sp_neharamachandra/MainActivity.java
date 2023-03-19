@@ -1,15 +1,12 @@
 package edu.northeastern.numad23sp_neharamachandra;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,4 +47,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent2 = new Intent(this, PrimeDirective.class);
         startActivity(intent2);
     }
+
+    public void locationConfirmed(View view) {
+        Intent intent = new Intent(this, LocationActivity.class);
+        startActivity(intent);
+    }
+
 }
