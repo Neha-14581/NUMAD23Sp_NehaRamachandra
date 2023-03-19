@@ -44,7 +44,7 @@ public class LocationActivity extends AppCompatActivity implements LocationListe
         currLongitude = findViewById(R.id.longitude_val);
         totalDistance = findViewById(R.id.distance_text);
         resetDistance = findViewById(R.id.reset_distance);
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
 
         if (ContextCompat.checkSelfPermission(LocationActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(LocationActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
@@ -100,9 +100,10 @@ public class LocationActivity extends AppCompatActivity implements LocationListe
         }
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onLocationChanged(Location newLocation) {
-        currLatitude.setText( newLocation.getLatitude() + "");
+        currLatitude.setText(newLocation.getLatitude() + "");
         currLongitude.setText(newLocation.getLongitude() + "");
 
         if(lastLocation != null){
